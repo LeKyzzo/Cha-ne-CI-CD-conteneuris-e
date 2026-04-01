@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
-app.get("/test1", (req, res) => res.send("test1"));
+app.get("/health", (req, res) => {
+  res.json({ status: "updated" });
+});
 app.get("/api/activities", (req, res) => {
   res.json([]);
 });
