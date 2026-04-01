@@ -6,4 +6,5 @@ app.get("/health", (req, res) => {
 app.get("/api/activities", (req, res) => {
   res.json([]);
 });
+app.get("/test1", (req, res) => res.send("test1"));
 app.listen(3000, () => console.log("VitalSync API on :3000"));
