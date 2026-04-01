@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 app.get("/health", (req, res) => {
-  res.json({ status: "ok", timestamp: new Date() });
+  res.json({ status: "ok-from-feature1" });
 });
 app.get("/api/activities", (req, res) => {
   res.json([]);
